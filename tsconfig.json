@@ -1,0 +1,37 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@pages/*": ["./pages/*"],
+      "@layouts/*": ["./layouts/*"],
+      "@store/*": ["./store/*"]
+    },
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/axios",
+      "@types/node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ],
+  "include": [
+    "nuxt.config.ts",
+    "modules.d.ts"
+  ]
+}
