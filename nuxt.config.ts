@@ -1,9 +1,7 @@
-import { defineNuxtConfig } from 'nuxt';
-
+// nuxt.config.ts
 export default defineNuxtConfig({
+  // Your Nuxt config here
   typescript: {
-    shim: false,
-    strict: true,
-  },
-  // Konfigurasi lainnya di sini
-});
+    strict: true
+  }
+})
